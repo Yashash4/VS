@@ -1,0 +1,30 @@
+.footer {
+  padding: 32px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
