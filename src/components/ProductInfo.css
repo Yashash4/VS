@@ -1,0 +1,27 @@
+.product-info {
+    flex: 1;
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .price {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    color: #c2185b;
+  }
+  
+  .description {
+    margin-top: 15px;
+    font-size: 1rem;
+  }
+  
+  .buy-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #c2185b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
