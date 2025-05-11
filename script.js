@@ -1,51 +1,37 @@
-// Navbar Toggle
-document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.querySelector('.navbar__hamburger');
-    const navCenter = document.querySelector('.navbar__center');
-  
-    if (hamburger) {
-      hamburger.addEventListener('click', () => {
-        navCenter.style.display = navCenter.style.display === 'flex' ? 'none' : 'flex';
-      });
-    }
-  
-    // Thumbnail Selector
-    const thumbs = document.querySelectorAll('.thumb');
-    const mainImage = document.querySelector('.gallery__image');
-    
-    thumbs.forEach(thumb => {
-      thumb.addEventListener('click', () => {
-        // Remove active class from all thumbs
-        thumbs.forEach(t => t.classList.remove('active'));
-        // Add active class to clicked thumb
-        thumb.classList.add('active');
-        // Update main image
-        mainImage.src = thumb.src.replace('thumb', 'product-main');
-      });
-    });
-  
-    // Size Selector
-    const sizeOptions = document.querySelectorAll('.size__option');
-    sizeOptions.forEach(option => {
-      option.addEventListener('click', () => {
-        sizeOptions.forEach(btn => btn.classList.remove('active'));
-        option.classList.add('active');
-      });
-    });
-  
-    // Cart Counter
-    const addToBag = document.querySelector('.add-to-bag');
-    const bagCounter = document.querySelector('.bag-count');
-    let count = 0;
-  
-    if (addToBag) {
-      addToBag.addEventListener('click', () => {
-        count++;
-        bagCounter.textContent = count;
-        bagCounter.style.animation = 'bump 300ms ease-out';
-        setTimeout(() => {
-          bagCounter.style.animation = '';
-        }, 300);
-      });
+
+// =========== ACCORDION (Composition / More) ===========
+document.querySelectorAll('.accordion-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const content = btn.nextElementSibling;
+    const isOpen = btn.classList.toggle('active');
+    if (isOpen) {
+      content.style.maxHeight = content.scrollHeight + 'px';
+    } else {
+      content.style.maxHeight = null;
     }
   });
+});
+
+// =========== SIZE SELECTION ===========
+const sizeButtons = document.querySelectorAll('.sizes .size');
+sizeButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    // remove selected from all
+    sizeButtons.forEach(b => b.classList.remove('selected'));
+    // add to clicked
+    btn.classList.add('selected');
+  });
+});
+
+// =========== QUANTITY CONTROLS ===========
+const qtyInput = document.querySelector('.qty-input');
+document.querySelectorAll('.qty-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    let current = parseInt(qtyInput.value, 10);
+    if (btn.textContent.trim() === '+') {
+      qtyInput.value = current + 1;
+    } else if (btn.textContent.trim() === '–' && current > 1) {
+      qtyInput.value = current - 1;
+    }
+  });
+});

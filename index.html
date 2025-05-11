@@ -1,50 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VS Clone - High Leg Thong</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VS Clone – Logo Cotton-Shine High-Leg Thong Panty</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Navbar (unchanged) -->
   <header class="vs-navbar">
     <nav class="vs-navbar__container">
-      <!-- Left Logos -->
       <div class="vs-navbar__left">
-        <img src="./assets/images/victoriasecrettab.svg" class="vs-logo">
+        <img src="./assets/images/victoriasecrettab.svg" class="vs-logo" alt="VS">
         <div class="vs-divider"></div>
-        <img src="./assets/images/pinkk.svg" class="vs-logo">
+        <img src="./assets/images/pinkk.svg" class="vs-logo" alt="PINK">
         <div class="vs-divider"></div>
-        <img src="./assets/images/beauty.svg" class="vs-logo">
+        <img src="./assets/images/beauty.svg" class="vs-logo" alt="Beauty">
       </div>
-  
-      <!-- Right Icons -->
       <div class="vs-navbar__right">
-        <img src="./assets/images/truck01.svg" class="vs-icon">
-        <img src="./assets/images/Account-new.svg" class="vs-icon">
+        <img src="./assets/images/truck01.svg" class="vs-icon" alt="Shipping">
+        <img src="./assets/images/Account-new.svg" class="vs-icon" alt="Account">
         <div class="vs-icon-badge">
-          <img src="./assets/images/minibag.svg " class="vs-icon">
+          <img src="./assets/images/minibag.svg" class="vs-icon" alt="Bag">
           <span class="cart-count">0</span>
         </div>
       </div>
     </nav>
   </header>
 
-  <div>
-    <p>THIS PRODUCT IS AUTHENTICATED</p>
+  <!-- Authenticated Badge (centered & larger) -->
+  <div class="vs-authenticated-badge">
+    <svg class="vs-authenticated-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M9 16.2l-3.5-3.5 1.4-1.4L9 13.4l7.1-7.1 1.4 1.4z"/>
+    </svg>
+    <span>This Product Is Authenticated</span>
   </div>
 
+  <!-- PINK Header (unchanged) -->
   <div class="product-header">
     <div class="product-header__container">
-      <!-- Left Empty Space -->
       <div class="product-header__left"></div>
-      
-      <!-- Center PINK Logo -->
       <div class="product-header__center">
-        <img src="./assets/images/pink-logo.png" class="pink-main-logo" alt="PINK">
+        <img src="./assets/images/pink-logo.png" class="pink-main-logo" alt="PINK Logo">
       </div>
-      
-      <!-- Right Search -->
       <div class="product-header__right">
         <div class="product-search">
           <input type="text" placeholder="Search" class="search-input">
@@ -54,111 +53,164 @@
     </div>
   </div>
 
+  <!-- ————————————————————————————————
+       PRODUCT SECTION 
+       ———————————————————————————————— -->
+  <section class="product-details">
+    <div class="product-container">
 
-
-
-
-
-  <!-- Add after the product-header section -->
-<section class="product-details">
-  <div class="product-container">
-    <!-- Left Column -->
-    <div class="product-images">
-      <!-- Image gallery code here -->
-    </div>
-
-    <!-- Right Column - Product Details -->
-    <div class="product-info">
-      <h1 class="product-title">L060 COTTON SHINE HIGH-LEG THONG PANTY</h1>
-      <p class="product-price">MRP ₹1,299</p>
-      <p class="product-code">1124584095D1</p>
-      <p class="tax-info">Inclusive of all Taxes</p>
-      <p class="offer">Buy 2 at 25% Off</p>
-
-      <div class="emi-section">
-        <p class="emi-text">EMI from ₹118/month <a href="#" class="view-plans">View plans</a></p>
-        <div class="secure-payment">
-          <span>A move</span>
-          <img src="./assets/images/razorpay-secured.svg" alt="Secured by Razorpay" class="razorpay-logo">
-        </div>
+      <!-- 1) GALLERY MOSAIC -->
+      <div class="product-gallery">
+        <img src="./assets/images/pro1.jpg" class="gallery-image" alt="Front view">
+        <img src="./assets/images/pro2.jpg" class="gallery-image" alt="Back view">
+        <img src="./assets/images/pro3.jpg" class="gallery-image" alt="Detail / How to measure">
       </div>
 
-      <div class="color-selection">
-        <h3>Color VS White</h3>
-        <div class="color-options">
-          <!-- Add color swatches here -->
+      <!-- 2) INFO PANEL -->
+      <div class="product-info">
+        <div class="label-pink">PINK</div>
+        <h1 class="product-title">Logo Cotton-Shine High-Leg Thong Panty</h1>
+
+        <!-- MRP and Serial side by side -->
+        <div class="price-row">
+          <span class="product-price">MRP ₹1,299</span>
+          <span class="original-price">₹1,499</span>
         </div>
+        <div class="code-tax">
+          <span class="product-code">Style No. 1124584095D1</span>
+          <span class="tax-info">Inclusive of all taxes</span>
+        </div>
+
+        <!-- plain Link, no bg -->
+        <a href="#" class="offer-tag">Buy 2 at 25% Off</a>
+
+        <!-- bordered EMI with calendar icon -->
+        <div class="emi-box">
+          <img src="./assets/images/calendar-icon.svg" class="calendar-icon" alt="Calendar">
+          <span class="emi-text">EMI from ₹118/month & more</span>
+          <a href="#" class="view-plans">View plans</a>
+          <img src="./assets/images/razorpay-secured.svg" alt="Razorpay Secured" class="emi-logo">
+        </div>
+
+        <!-- color then size on separate lines -->
+        <div class="selection-row">
+          <div class="color-block">
+            <div class="sel-label">Color: <strong>VS White</strong></div>
+            <div class="swatches">
+              <div class="swatch white selected"></div>
+              <div class="swatch black"></div>
+              <div class="swatch pink"></div>
+            </div>
+          </div>
+          <div class="size-block">
+            <div class="sel-label">Size:</div>
+            <div class="sizes">
+              <button class="size">XS</button>
+              <button class="size">S</button>
+              <button class="size">M</button>
+              <button class="size">L</button>
+              <button class="size">XL</button>
+              <button class="size">XXL</button>
+            </div>
+            <a href="#" class="size-chart">View Size Chart ›</a>
+          </div>
+        </div>
+
+        <!-- quantity with bg & border -->
+        <div class="quantity-row">
+          <button class="qty-btn" aria-label="Decrease quantity">–</button>
+          <input type="number" min="1" value="1" class="qty-input">
+          <button class="qty-btn" aria-label="Increase quantity">+</button>
+        </div>
+
+        <button class="add-to-bag">ADD TO BAG</button>
+        <p class="returns-info">
+          Free Returns. Exclusions may apply. <a href="#">Learn More</a>
+        </p>
+
+        <!-- Accordion-only PRODUCT DESCRIPTION -->
+        <div class="details-tabs">
+          <div class="tab">
+            <h3>PRODUCT DESCRIPTION</h3>
+
+            <p class="subheading">The Takeaway: A top-drawer staple</p>
+            <p>This thong features super-soft fabric that hugs your curves.</p>
+            <ul>
+              <li>Bare coverage: Total cheek peek with no back coverage</li>
+              <li>Low rise</li>
+              <li>High leg</li>
+              <li>Logo waistband</li>
+              <li>Imported</li>
+            </ul>
+
+            <!-- Composition accordion -->
+            <div class="accordion-item">
+              <button class="accordion-toggle">Composition</button>
+              <div class="accordion-content">
+                <ul>
+                  <li>Body/Gusset: 57% Cotton, 38% Modal, 5% Elastane</li>
+                  <li>Elastic: 76% Polyamide, 12% Polyester, 12% Elastane</li>
+                  <li>Exclusive of Decoration</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- More accordion -->
+            <div class="accordion-item">
+              <button class="accordion-toggle">More</button>
+              <div class="accordion-content">
+                <ul>
+                  <li>
+                    <strong>Packer/Importer Name and Address:</strong><br>
+                    Apparel Group India Pvt Ltd. Raiaskaran Tech Park, 3rd Floor, Unit No.1, Tower I, Phase II,<br>
+                    Andheri – Kurla Rd, Marol, Mumbai, Maharashtra, India 400072.<br>
+                    Contact: 1800-833-5350, vs-customercare@apparelgroup.in
+                  </li>
+                  <li><strong>Country Of Origin:</strong> Sri Lanka</li>
+                  <li><strong>Generic Type:</strong> Casual Panty</li>
+                  <li><strong>Exported by:</strong> MII Brand Import, LLC</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div><!-- /.product-info -->
+
+    </div><!-- /.product-container -->
+  </section>
+
+  <!-- Footer (unchanged) -->
+  <footer class="vs-footer">
+    <div class="vs-footer-container">
+      <div class="vs-footer-section">
+        <h4>About Us</h4>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Sustainability</a></li>
+        </ul>
       </div>
-
-      <div class="size-selection">
-        <h3>Select Size</h3>
-        <div class="size-grid">
-          <button class="size-option">S/10</button>
-          <button class="size-option">X/S</button>
-          <button class="size-option">S</button>
-          <button class="size-option">M</button>
-          <button class="size-option">L</button>
-          <button class="size-option">XL</button>
-          <button class="size-option">XXL</button>
-        </div>
-        <a href="#" class="size-chart">View Size Chart ></a>
+      <div class="vs-footer-section">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">Returns & Exchanges</a></li>
+        </ul>
       </div>
-
-      <div class="quantity-selector">
-        <span>Quantity:</span>
-        <div class="qty-controls">
-          <button class="qty-minus">-</button>
-          <input type="number" value="1" min="1" class="qty-input">
-          <button class="qty-plus">+</button>
-        </div>
-      </div>
-
-      <button class="add-to-bag">Add to Bag</button>
-      <p class="returns-info">Free Returns. Exclusions May Apply. <a href="#">Learn More</a></p>
-
-      <div class="measurement-guide">
-        <h3>How To Measure</h3>
-        <div class="measurement-section">
-          <h4>WAIST MEASUREMENT</h4>
-          <p>Bend to one side to find natural indentation. This is your natural waist...</p>
-        </div>
-        <div class="measurement-section">
-          <h4>HIP MEASUREMENT</h4>
-          <p>Stand on level surface with feet together. Measure around fullest part...</p>
-        </div>
-        
-        <table class="size-table">
-          <thead>
-            <tr>
-              <th>Size</th>
-              <th>Waist</th>
-              <th>Hip</th>
-            </tr>
-          </thead>
-          
-        </table>
-      </div>
-
-      <div class="product-description">
-        <h3>PRODUCT DESCRIPTION</h3>
-        <p class="description-lead">The Takeaway: A top-drawer staple</p>
-        <p>This thong features super soft fabric that hugs your curves.</p>
-        <ul class="features-list">
-          <li>Bare coverage: Total cheek peek with no back coverage</li>
-          <li>Low rise</li>
-          <li>High leg</li>
-          <li>Logo waistband</li>
-          <li>Imported</li>
+      <div class="vs-footer-section">
+        <h4>Follow Us</h4>
+        <ul class="vs-social-icons">
+          <li><a href="#"><img src="./assets/images/facebook.svg" alt="Facebook"></a></li>
+          <li><a href="#"><img src="./assets/images/instagram.svg" alt="Instagram"></a></li>
+          <li><a href="#"><img src="./assets/images/twitter.svg" alt="Twitter"></a></li>
         </ul>
       </div>
     </div>
-  </div>
-</section>
-
-
+    <div class="vs-footer-copy">&copy; 2025 Victoria’s Secret & Co. All Rights Reserved.</div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
