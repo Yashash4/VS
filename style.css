@@ -69,10 +69,10 @@ body {
   background-color: #e6f4ea; border: 1px solid #b6e2bc;
   border-radius: 12px; padding: 12px 20px;
   font-size: 1.2rem; color: #006644;
-  margin: 2rem auto; max-width: 340px;
+  margin: 2rem auto; max-width: 350px;
 }
 .vs-authenticated-icon {
-  width: 20px; height: 20px; margin-right: 8px; fill: #006644;
+  width: 40px; height: 40px; margin-right: 8px; fill: #006644;
 }
 
 /* === PINK HEADER === */
